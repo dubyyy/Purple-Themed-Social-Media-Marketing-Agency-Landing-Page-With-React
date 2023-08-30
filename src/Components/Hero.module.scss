@@ -1,0 +1,49 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem;
+   
+    .left{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+           .headline{
+              display: flex;
+              flex-direction: column;
+                  span{
+                       font-size: 3rem;
+                       
+
+            }
+        }
+    }
+
+    .right{
+         img{
+           max-width: 30rem;
+           height: auto;
+        } 
+    }
+
+    .btn{
+        width: 8rem;
+        height: 2rem;
+        border-radius: 2rem;
+        border: 0px;
+        background-color: #BA68C8;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+}
+@media (max-width:640px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+       transform: scale(0.7);
+    }
+}
